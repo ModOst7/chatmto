@@ -1,0 +1,27 @@
+{
+  "name": "karasique228-1488",
+  "version": "0.0.2",
+  "description": "karasique228-148",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "request": "^2.78.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "~3.1.0",
+    "mime": "~1.2.7",
+    "mongoose": "^4.1.9",
+    "sessionstore": "^1.2.16",
+    "socket.io": "^1.4.5"
+  },
+  "engines": {
+    "node": "^6.0.0",
+    "npm": "^3.8.6"
+  }
+}

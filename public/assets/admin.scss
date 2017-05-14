@@ -1,0 +1,222 @@
+@import 'reset';
+@import 'base';
+@import 'fonts';
+
+#form {
+	//border: 3px solid red;
+	padding: 20px 40px;
+	width: 400px;
+	margin: 200px auto;
+	box-shadow: 0px -5px 10px rgb(190, 190, 190); 
+	border-radius: 20px;
+	background: linear-gradient(#4b4b4b 0px, #353535 88px);
+	border-top: 1px solid rgba(92, 92, 92, 1);
+	span {
+	display: block;
+	font-size: 26px;
+	text-shadow: 1px 2px 5px rgb(192, 190, 190);
+	text-align: center;
+	padding-bottom: 10px;
+	}
+	input {
+	display: block;
+	color: $text_color;
+	width: 120px;
+	margin: 10px auto;
+	background: linear-gradient(rgba(50, 50, 50, 0.5) 0px, rgba(80, 80, 80, 0.5) 80px);
+	border: none;
+	border-radius: 4px;
+	height: 40px;
+	font-size: 18px;
+	box-shadow: 0px 0px 10px rgb(33, 169, 175); 
+	transition-duration: 0.3s;
+	&:focus {
+		box-shadow: 0px 0px 10px rgb(190, 190, 190); 
+		background: linear-gradient(rgba(60, 60, 60, 0.8) 0px, rgba(60, 60, 60, 0.8) 80px);
+	}
+	}
+	button {
+	display: block;
+	margin: 15px auto;
+	}
+}
+
+button {
+	color: $text_color;
+	transition-duration: 0.2s;
+	width: 60px;
+	font-size: 20px;
+	background: linear-gradient(rgba(180, 180, 180, 1) 0px, rgba(83, 83, 83, 0.4) 20px);
+	box-shadow: 0px 0px 2px rgb(190, 190, 190);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	&:hover {
+		background: linear-gradient(rgba(180, 180, 180, 1) 0px, rgba(83, 83, 83, 0.4) 15px);
+		box-shadow: 0px -3px 10px rgb(190, 190, 190); 
+		text-shadow: 1px 2px 5px rgb(192, 190, 190);
+	}
+}
+
+.status {
+	background-color: rgba(50, 50, 50, 0);
+	padding: 10px 10px 0 0;
+	img {
+	width: 60px;
+	padding: 5px;
+	}
+	span {
+	vertical-align: 50%;
+	font-size: 24px;
+	font-family: $header_font
+	}
+	.yellow {
+	background-image: radial-gradient(circle at 50% 48%, yellow 45%, transparent 65%);
+	}
+	.yellow + span {
+	color: yellow;
+	font-weight: bold;
+	text-shadow: 0px 0px 6px yellow;
+	}
+	.red {
+	background-image: radial-gradient(circle at 50% 48%, red 45%, transparent 65%);
+	}
+	.red + span {
+	color: red;
+	font-weight: bold;
+	text-shadow: 0px 0px 6px red;
+	}
+	.green {
+	background-image: radial-gradient(circle at 50% 48%, green 45%, transparent 65%);
+	}
+	.green + span {
+	color: green;
+	font-weight: bold;
+	text-shadow: 0px 0px 6px green;
+	}
+}
+
+#container {
+	//width: 600px;
+	background-color: rgba(30, 30, 30, 0.5);
+	border-radius: 5px;
+	//padding: 10px;
+	overflow: auto;
+	box-shadow: 2px -2px rgba(83, 83, 83, 0.4);
+	height: 450px;
+
+	.post {
+	padding: 5px;
+	background-image: linear-gradient(rgba(20, 20, 20, 0.5) 0px, rgba(20, 20, 20, 0.5) 0px);
+	margin: 8px 0;
+
+	.nickname {
+		font-family: "Vera";
+		text-shadow: 1px 2px 5px rgb(192, 190, 190);
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.message {
+		font-family: "Playfair";
+		text-shadow: 0px 0px 1px white;
+	}
+
+	.date {
+		font-size: 14px;
+		font-family: "Bebas";
+		float: right;
+	}
+	}
+
+}
+textarea {
+	margin-top: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	width: 300px;
+	padding:5px;
+	height: 60px;
+	background: linear-gradient(rgba(30, 30, 30, 0.3) 0px, rgba(33, 33, 33, 0.3) 0px);
+	transition-duration: 0.3s;
+	border: none;
+	box-shadow: 0px 0px 1px rgb(180, 180, 180);
+	&:focus {
+	box-shadow: 0px 0px 6px rgb(180, 180, 180);
+	}
+}
+#put {
+	width: 110px;
+	height: 30px;
+	vertical-align: 50%;
+}
+
+
+#main {
+	width: 600px;
+	margin: 10px auto;
+	//height: 500px;
+}
+
+#main form {
+	display: inline;
+}
+#window-chat, #container {
+	width: 100%;
+}
+
+#users {
+	padding: 5px 10px 0px 15px;
+	width:340px;
+	height: 500px;
+	margin-left: 10px;
+	float: left;
+	background: linear-gradient(rgba(30, 30, 30, 0.3) 0px, rgba(33, 33, 33, 0.3) 0px);
+
+	li {
+	margin: 10px 0;
+	cursor: pointer;
+	box-shadow: 0px 0px 1px rgb(180, 180, 180);
+	transition-duration: 0.3s;
+
+	&:hover {
+		box-shadow: 0px 0px 6px rgb(180, 180, 180);
+	}
+	}
+
+	li.offline {
+		list-style-image: url('../img/offline.png');
+	}
+
+	li.online {
+		list-style-image: url('../img/online.png');
+	}
+
+	.close {
+		cursor: pointer;
+		float: right;
+		color: rgb(140, 60, 60);
+		transition-duration: 0.3s;
+		&:hover {
+			text-shadow: 1px 1px 6px rgb(200, 60, 60);
+			color: rgb(200, 60, 60);
+		}
+	}
+}
+
+
+#users li.offline span {
+	display: inline;
+}
+
+#intro {
+	position: absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.close {
+	display: none;
+}

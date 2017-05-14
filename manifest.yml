@@ -1,0 +1,7 @@
+---
+applications:
+- name: karasique228-1488
+  memory: 512M
+  host: karasique228-1488
+
+pushstate: enabled
